@@ -43,7 +43,7 @@ startRound();
         // if the equals is = the randomnumber, + 1 to wins and restart game
         if (totalscore = randomnumber){
             wins = wins + 1;
-            $("#wins").htnl(wins);
+            $("#wins").html(wins);
             startRound();
         };
         // if the equals i > the randomnumber, + 1 to losses and restart game
