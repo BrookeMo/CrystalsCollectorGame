@@ -1,48 +1,93 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
+    background-image: url("../images/Background.png");
 }
-ol, ul {
-	list-style: none;
+
+div.title {
+    font-family: 'Rock Salt', cursive;
+    background-color: white;
+    text-align: center;
 }
-blockquote, q {
-	quotes: none;
+
+h1 {
+    margin: 5px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+div.instructions {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+p {
+    font-family: 'Tillana', cursive;
+    margin: 1px;
+    font-size: 25px;
+}
+.gameplay {
+    height: 200px;
+}
+
+.randomnumber {
+    background-color: rgba(165,232,131, 0.5);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+.randomnumber p {
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px;
+}
+
+.crystals {
+    background-color: rgba(131, 242, 245, 0.5);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#greencrystal {
+    float: right;
+}
+
+#bluecrystal {
+    float: left;
+}
+
+#orangecrystal {
+    float: right;
+}
+
+#pinkcrystal {
+    float: left;
+}
+.firstrow {
+    width: 200px;
+    height: 100px;
+}
+
+.totalscore {
+    background-color: rgba(206, 81, 156, 0.5);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+.totalscore p {
+    font-family: 'Rock Salt', cursive;
+}
+
+.gamescore {
+    background-color: rgba(232, 158, 58, 0.5);
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    float: left;
 }
