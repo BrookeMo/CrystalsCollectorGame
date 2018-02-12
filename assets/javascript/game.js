@@ -20,7 +20,6 @@ function startRound() {
     var pinkNum = Math.floor(Math.random() * 15) +1;
 // onclick crystal, it totalscore + colorNum = new totalscore
         $("#greencrystal").on("click", function() {
-            console.log(totalscore);
             totalscore = totalscore + greenNum;
             console.log(totalscore);
         });
@@ -42,14 +41,14 @@ startRound();
         $("#totalscore").html(totalscore);
     // if the equals is < the randomnumber, continue gameplay
         // if the equals is = the randomnumber, + 1 to wins and restart game
-        if (totalscore = randomnumber){
-            wins = wins + 1;
+        if (totalscore === randomnumber){
+            wins = wins ++;
             $("#wins").html(wins);
             startRound();
         };
         // if the equals i > the randomnumber, + 1 to losses and restart game
         if (totalscore > randomnumber){
-            losses = losses + 1;
+            losses = losses +++;
             $("#losses").html(losses);
             startRound();
         };
