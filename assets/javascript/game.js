@@ -8,6 +8,7 @@ var losses = 0;
 function startRound() {
 // reset totalscore to zero
     var totalscore = 0;
+    console.log(totalscore);
 // generate a random number between 19 and 120
     var goal = Math.floor(Math.random() * 120) + 19;
 // insert the generated number in the p tag in the randomnumber div
