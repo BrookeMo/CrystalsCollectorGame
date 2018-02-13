@@ -4,25 +4,33 @@ var totalscore = 0;
 var wins = 0;
 var losses = 0;
 var goal = 0;
+var greenNum = 0;
+var blueNum = 0;
+var orangeNum = 0;
+var pinkNum = 0;
 
 // function called: startRound
 function startRound() {
 // reset totalscore to zero
+    console.log(totalscore);
     totalscore = 0;
     $("#totalscore").html(totalscore);
+    console.log(totalscore);
 // generate a random number between 19 and 120
     goal = Math.floor(Math.random() * 120) + 19;
 // insert the generated number in the p tag in the randomnumber div
     $("#randomnumber").html(goal);
 // generate 4 random numbers to assign to the crystals
-    var greenNum = Math.floor(Math.random() * 15) +1;
+    greenNum = Math.floor(Math.random() * 15) +1;
     console.log("The green crystal is " + greenNum);
-    var blueNum = Math.floor(Math.random() * 15) +1;
+    blueNum = Math.floor(Math.random() * 15) +1;
     console.log("The blue crystal is " + blueNum);
-    var orangeNum = Math.floor(Math.random() * 15) +1;
+    orangeNum = Math.floor(Math.random() * 15) +1;
     console.log("The orange crystal is " + orangeNum);
-    var pinkNum = Math.floor(Math.random() * 15) +1;
+    pinkNum = Math.floor(Math.random() * 15) +1;
     console.log("The pink crystal is " + pinkNum);
+};
+startRound();
 // onclick crystal, it totalscore + colorNum = new totalscore
         $("#greencrystal").on("click", function() {
             totalscore = totalscore + greenNum;
@@ -44,8 +52,6 @@ function startRound() {
             console.log(totalscore);
             scoreCount();
         });
-};
-startRound();
 // display the = in the total score div
 function scoreCount() {
     $("#totalscore").html(totalscore);
