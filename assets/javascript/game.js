@@ -16,13 +16,13 @@ function startRound() {
     $("#randomnumber").html(goal);
 // generate 4 random numbers to assign to the crystals
     var greenNum = Math.floor(Math.random() * 15) +1;
-    console.log("green crystal is " + greenNum);
+    console.log("The green crystal is " + greenNum);
     var blueNum = Math.floor(Math.random() * 15) +1;
-    console.log("blue crystal is " + blueNum);
+    console.log("The blue crystal is " + blueNum);
     var orangeNum = Math.floor(Math.random() * 15) +1;
-    console.log("orange crystal is " + orangeNum);
+    console.log("The orange crystal is " + orangeNum);
     var pinkNum = Math.floor(Math.random() * 15) +1;
-    console.log("pink crystal is " + pinkNum);
+    console.log("The pink crystal is " + pinkNum);
 // onclick crystal, it totalscore + colorNum = new totalscore
         $("#greencrystal").on("click", function() {
             totalscore = totalscore + greenNum;
